@@ -1,5 +1,5 @@
 import React from "react";
-function contacts(){
+function Contacts(){
     return(
         <div>ContactsPage</div>
     )
