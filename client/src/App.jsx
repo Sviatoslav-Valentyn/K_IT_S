@@ -20,10 +20,14 @@ import TermsOfSaleOfGoodsPage from './Pages/TermsOfSaleOfGoods/TermsOfSalesGoods
 import VacanciesPage from './Pages/Vacancies/Vacancies.jsx'
 import ViewOutfitsPage from './Pages/ViewOutfits/ViewOutfits.jsx'
 
+import Header from "./Components/Header/Header.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
 function App(){
     return(
         <div className="App">
             <Router>
+                <Header />
+
                 <Routes>
                    <Route>
                        <Route index element ={<HomePage />}/>
@@ -46,6 +50,7 @@ function App(){
                        <Route path='/newClothes' element ={<NewPage />}/>   
                    </Route>
                    </Routes>
+                   < Footer />
                 </Router>
         </div>
     );
