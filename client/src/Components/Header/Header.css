@@ -1,0 +1,35 @@
+.wrap{
+    position: relative;
+    width: 1300px;
+    height: 2185px;
+    background: white;
+    margin: 0 auto;
+}
+.header{
+    width: 1300px;
+    height: 131px;
+    background-color: black;  
+    
+}
+
+.nav_list{
+    display: flex;
+    justify-content: space-around;
+    color: black;      
+}
+.header_nav{
+   margin-top: 50px;
+    
+}
+.header_nav_link{
+    text-decoration: none; 
+    color: aliceblue;
+}
+
+.header_nav1{
+     margin-left:50px;
+     margin-top: 20px;
+     font-size: 59px;
+     color: white;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,20 @@
+.footer{  
+    width: 1300px;
+    height: 159px;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: auto;
+    background: black;
+    }
+ .nav_list{
+        display: flex;
+        justify-content: space-around;
+        color: black;      
+    }
+    .footer_nav_link{
+        text-decoration: none; 
+        color: aliceblue;      
+    }
+ 
+
+    
