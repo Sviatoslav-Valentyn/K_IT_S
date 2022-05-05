@@ -6,15 +6,15 @@ import './Home.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Card, Button} from 'react-bootstrap'
-import Slider from './Slider.jsx'
-import FormEmail from './FormEmail.jsx'
+import Slider from '../../Components/Slider/Slider.jsx'
+import FormEmail from '../../Components/FormEmail/FormEmail.jsx'
 
-import Man from './imgHome/Для чоловіків (1).png'
-import Woman from './imgHome/Для жінок (1).png'
-import Newss from './imgHome/news (2).png'
-import Neww from './imgHome/new (4).png'
-import LeftPhoto from './imgHome/cloudLeft.png'
-import RightPhoto from './imgHome/cloudRight.png'
+import Man from '../../Assets/imgHome/Для чоловіків (1).png'
+import Woman from '../../Assets/imgHome/Для жінок (1).png'
+import Newss from '../../Assets/imgHome/news (2).png'
+import Neww from '../../Assets/imgHome/new (4).png'
+import LeftPhoto from '../../Assets/imgHome/cloudLeft.png'
+import RightPhoto from '../../Assets/imgHome/cloudRight.png' 
 function Home(){
     return(
         <div className="wrap"> 

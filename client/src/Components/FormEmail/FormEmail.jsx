@@ -13,7 +13,7 @@ export const FormEmail = () => (
     <p className="inputt">Введіть:</p>
     <p className="email">Електронну пошту</p>
     
-    <Formik
+    <Formik 
       initialValues={{
         email: '',
       }}
@@ -27,7 +27,7 @@ export const FormEmail = () => (
       {({ errors, touched }) => (
         <Form>
           <Field name="email" type="email" className='input' />
-          {errors.email && touched.email ? <div>{errors.email}</div> : null}
+          <div className='error' >{errors.email && touched.email ? <div>{errors.email}</div> : null}</div>
           <button className="button" type="submit">Submit</button>
         </Form>
       )}

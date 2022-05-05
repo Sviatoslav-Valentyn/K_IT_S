@@ -16,11 +16,12 @@ import Slider from "react-slick";
 import React from "react";
 import {Card, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Good1 from './imgHome/Good1.png'
-import Good2 from './imgHome/Good2.png'
-import Good3 from './imgHome/Good3.png'
-import Good4 from './imgHome/Good4.png'
-import Good5 from './imgHome/Good5.png'
+import Good1 from '../../Assets/imgHome/Good1.png' 
+import Good2 from '../../Assets/imgHome/Good2.png' 
+import Good3 from '../../Assets/imgHome/Good3.png' 
+import Good4 from '../../Assets/imgHome/Good4.png'
+import Good5 from '../../Assets/imgHome/Good5.png'
+import './Slider.css'
 const Sliders = ()=>{
   const settings = {
     dots: true,
