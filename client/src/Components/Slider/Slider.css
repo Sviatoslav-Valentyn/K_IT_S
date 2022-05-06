@@ -1,0 +1,23 @@
+
+  /*слайдер*/
+  .slider{
+    margin-left: 15px;
+}
+.hheaderRec{
+  padding-top: 50px;
+  padding-left: 510px;
+  padding-bottom: 50px;
+  font-size: 48px;
+  line-height: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+.textBorder{
+  width: 287px;
+  height: 72px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(180deg, #C4C4C4 0%, rgba(255, 254, 254, 0) 100%);
+}

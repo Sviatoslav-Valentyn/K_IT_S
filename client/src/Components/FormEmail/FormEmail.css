@@ -1,0 +1,61 @@
+.forma{
+    position: absolute;
+    width: 572px;
+    height: 329px;
+    right: 390px;
+    margin-left: 400px;
+    margin-top: 100px;
+    background: black;
+   
+    border-radius: 20px;
+  }
+  .forma p{
+    color:white;
+  }
+  .headerForma{
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 25px;
+    padding-top: 30px;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .inputt{
+    font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 23px;
+  margin-left: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .email{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    margin-left: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .input{
+    width: 425px;
+    height: 55px;
+    margin-left: 80px;
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+  }
+  .button{
+    width: 120px;
+    height: 43px;
+    margin-left: 400px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .error{
+    color: rgb(255, 1, 99);
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  

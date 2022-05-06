@@ -1,0 +1,110 @@
+/*.wrap{
+    position: relative;
+  
+    background: white;
+    margin: 0 auto;
+}
+.discount{
+    width: 572px;
+    height: 330px;
+    background-color: black;  
+    
+}
+.inputt{
+    width: 525px;
+    height: 55px;
+    background: #FFFEFE;
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+}
+.buttonn{
+    height: 43px;
+    width: 120px;
+    background: #FFFEFE;
+    border-radius: 20px;
+}
+.discount p{
+    color: #FFFEFE;
+    margin-left: 30px;
+}
+.header{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.input{
+    font-size: 18px;
+    line-height: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.gmail{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+.allBlock{
+    
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+.man{
+    margin-left: 95px;
+    
+}
+.woman{
+  margin-left: 5px;
+}
+.news {
+    
+    margin-left: 95px;
+    
+    
+
+
+}
+
+*/
+/*Головна сторінка*/
+.wrap{
+    position:relative;
+    width: 1300px;
+    height: 1900px;
+    background: white;
+    margin: 0 auto;
+}
+.rowPhotos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
+  
+.distancePhotoColum2{
+    margin-left: 25px;
+  }
+.photoLeft{
+    position: absolute;
+    width: 270px;
+    height: 342px;
+    top:1400px;
+    left:50px;
+}
+.photoRight{
+    position: absolute;
+    width: 388px;
+    height: 480px;
+    right: 0px;
+}
+
+

@@ -2,8 +2,7 @@
     width: 1300px;
     height: 159px;  
     font-family: Georgia, 'Times New Roman', Times, serif;
-    position: absolute;
-    top: auto;
+    margin: 0 auto;
     background: black;
     }
  .nav_list{
