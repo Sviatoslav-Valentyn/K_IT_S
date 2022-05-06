@@ -28,7 +28,7 @@ export const FormEmail = () => (
         <Form>
           <Field name="email" type="email" className='input' />
           <div className='error' >{errors.email && touched.email ? <div>{errors.email}</div> : null}</div>
-          <button className="button" type="submit">Submit</button>
+          <button className="button" type="submit">Надіслати</button>
         </Form>
       )}
     </Formik>
