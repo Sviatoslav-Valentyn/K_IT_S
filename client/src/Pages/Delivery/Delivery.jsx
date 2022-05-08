@@ -1,13 +1,13 @@
 import React from "react";
 import './Delivery.css'
-import Car from './imgDeliveryPage/carDelivery.png'
+import Car from '../../Assets/imgDeliveryPage/carDelivery.png'
 import LeftPhoto from '../../Assets/imgHome/cloudLeft.png'
 import RightPhoto from '../../Assets/imgHome/cloudRight.png'
 import FormEmail from '../../Components/FormEmail/FormEmail.jsx'
 function Delivery(){
     return(
         <div className="wrapDelivery">
-            <p className="titleOfPage">Доставка</p>
+            <h3 className="titleOfPage">Доставка</h3>
             <p className="mainContentOfPage">**Доставка тільки в населені пункти, контролювані Українським урядом / адміністрацією України. <br />
                На жаль, доставка в роздрібні магазини недоступна. Приносимо вибачення за незручності. Можливість примірки не передбачена. <br />
                Частковий викуп речей із замовлення неможливий. <br />
