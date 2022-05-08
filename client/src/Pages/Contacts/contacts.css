@@ -1,0 +1,71 @@
+.wrapContacts{
+    position:relative;
+    width: 1300px;
+    height: 780px;
+    background: white;
+    margin: 0 auto;
+}
+.titleOfPageContacts{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 81px;
+    /* identical to box height */
+    text-align: center;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mainContentOfContactsPage{
+ margin-left: 200px;
+ font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: #000000;
+}
+
+.ContentBanderaOfContactsPage{
+    margin-left: 950px;
+    font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #000000;
+}
+.ContentBanderaOfContactsPage2{
+    margin-left: 927px;
+    font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #000000;
+}
+.ContentBanderaOfContactsPage3{
+    margin-left: 1030px;
+    font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #000000;
+}
+.ContactsPageEmail{
+    margin-left: 1030px;
+}
+
+.photoLeftContacts{
+    position: absolute;
+    width: 230px;
+    height: 302px;
+    top:340px;
+    left:0px;
+    margin-left: 100px;
+}
+.photoRightContacts{
+    position: absolute;
+    width: 288px;
+    height: 380px;
+    margin-left: 1002px;
+    top:350px
+} 
