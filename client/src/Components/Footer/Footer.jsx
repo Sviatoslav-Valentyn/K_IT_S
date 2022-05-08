@@ -12,7 +12,7 @@ function Footer(){
               </ul>
               <ul className="nav_list" >
                   <li> <a className="footer_nav_link" href="#" >Умови продажу товарів</a></li>
-                  <li> <a className="footer_nav_link" href="#" >Вакансії</a></li>
+                  <li> <a className="footer_nav_link" href="/vacancies" >Вакансії</a></li>
                   <li> <a className="footer_nav_link" href="#">Контакти</a></li>
               </ul>
           </nav>
