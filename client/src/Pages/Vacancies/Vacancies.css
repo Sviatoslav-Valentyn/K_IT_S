@@ -1,0 +1,47 @@
+.wrapVacanciesPage{
+    position:relative;
+    width: 1300px;
+    height: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+.titleVacancies{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 81px;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.boldVacancies{
+    font-weight: 600;
+}
+.italicVacancies{
+    font-style: italic;
+}
+.mainContentVacancies{
+font-size: 24px;
+}
+.leftPartOfVacancies{
+    margin-left: 460px;
+}
+.rightPartOfVacancies{
+    margin-left: 660px;
+}
+.photoLeftVacancies{
+    position: absolute;
+    width: 270px;
+    height: 342px;
+    top:540px;
+    left:40px;
+}
+.photoRightVacancies{
+    position: absolute;
+    width: 388px;
+    height: 480px;
+    right: 0px;
+    top:450px
+}
