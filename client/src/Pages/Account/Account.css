@@ -1,0 +1,98 @@
+.wrapAccountPage{
+    position:relative;
+    width: 1300px;
+    height: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+.rightPartOfAccountRow1{
+   color: black;
+   font-style: oblique;
+   font-weight: 500;
+   margin-left: 900px;
+}
+.rightPartOfAccountRow2{
+color: black;
+   font-style: oblique;
+   font-weight: 500;
+   margin-left: 965px;
+ }
+ .headerOfAccount{
+     margin-top: 25px;
+     margin-left: 10px;
+     line-height: 30px;
+ }
+ .headerAcount{
+     font-size: 21px;
+ }
+
+ 
+
+
+ /*go create*/
+ .headerCreateObraz{
+    text-decoration: underline;
+    font-size: 30px;
+   
+    margin-bottom: 15px;
+    font-style: italic;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .goCreate{
+     height: 162px;
+     width: 345px;
+     background-color:#E5377C;
+     font-style: italic;
+     font-size: 30px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+ }
+ .createObraz{
+    position: absolute;
+    top:120px;
+    left: 790px;
+ }
+ 
+ /*strilka*/
+ .lineOfPage{
+   color: black;
+ }
+ .circleButton{
+    position: absolute;
+     height: 50px;
+     width: 50px;
+     border-radius: 30px;
+     background-color: rgb(8, 8, 8);
+     top: 115px;
+     left: 240px;
+ }
+ .arrow{
+     width: 30px;
+     height: 20px;
+     position: absolute;
+     display: inline-flex;
+     cursor: pointer;
+     top: 130px;
+     left: 250px;
+ }
+ .arrow::before,
+ .arrow::after{
+content: '';
+position: absolute;
+ }
+ .arrow::before{
+     width: 30px;
+     height: 3px;
+     background-color: rgb(252, 250, 250);
+     top: 8px;
+ }
+ .arrow::after{
+   border-top: 3px solid rgb(252, 250, 250);
+   border-right: 3px solid rgb(253, 251, 251);
+   transform: rotate(45deg);
+   top: 2px;
+   
+   right: 2px;
+   width: 15px;
+   height: 15px;
+    }
