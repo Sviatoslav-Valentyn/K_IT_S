@@ -21,13 +21,13 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
             required: true,
-            unique: 'compositeIndex',
+            unique: true,
             length:[5,100] 
         },
         PhoneNumber: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            unique: 'compositeIndex',
+            unique: true,
             length: [0,9] 
         }
     })

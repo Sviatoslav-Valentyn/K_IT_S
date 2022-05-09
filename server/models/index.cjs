@@ -37,26 +37,26 @@ db.Sequelize = Sequelize;
 db.user.hasOne(db.product, {
   foreignKey: {
     name: 'ID_User',
-    allowNull: false,
-    onDelete: 'RESTRICT',
-    onUpdate: 'RESTRICT'
-  }
+    allowNull: false
+  },
+  onDelete: 'RESTRICT',
+  onUpdate: 'RESTRICT'
 });
 db.user.hasOne(db.feedback, {
   foreignKey: {
     name: 'ID_User',
-    allowNull: false,
-    onDelete: 'RESTRICT',
-    onUpdate: 'RESTRICT'
-  }
+    allowNull: false
+  },
+  onDelete: 'RESTRICT',
+  onUpdate: 'RESTRICT'
 });
 db.product.hasOne(db.feedback, {
   foreignKey: {
     name: 'ID_Product',
-    allowNull: false,
-    onDelete: 'RESTRICT',
-    onUpdate: 'RESTRICT'
-  }
+    allowNull: false
+  },
+  onDelete: 'RESTRICT',
+  onUpdate: 'RESTRICT'
 });
 
 module.exports = db;
