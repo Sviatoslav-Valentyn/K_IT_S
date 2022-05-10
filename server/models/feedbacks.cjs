@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true
         },
         Comment: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(350),
             allowNull: false,
             length:[1,350]
         },

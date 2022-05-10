@@ -5,35 +5,33 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
+        Photo: {
+            type: DataTypes.BLOB('long'),
+            allowNull: false
+        },
         Name: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            length:[0,250]
+            type: DataTypes.STRING(100),
+            allowNull: false
         },
         Price: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            length:[1,10]
+            type: DataTypes.INTEGER(10),
+            allowNull: false
         },
         Country: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            length:[1,100] 
+            type: DataTypes.STRING(80),
+            allowNull: false
         },
         Components: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            length:[1,300] 
+            type: DataTypes.STRING(300),
+            allowNull: false
         },
         Colour: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            length:[1,50] 
+            type: DataTypes.STRING(50),
+            allowNull: false
         },
         Season: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            length:[1,50] 
+            type: DataTypes.STRING(50),
+            allowNull: false
         },
 
     })
