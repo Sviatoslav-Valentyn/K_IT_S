@@ -17,6 +17,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER(10),
             allowNull: false
         },
+        Sex: {
+            type: DataTypes.STRING(10),
+            allowNull: false
+        },
         Country: {
             type: DataTypes.STRING(80),
             allowNull: false
