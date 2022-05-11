@@ -9,12 +9,14 @@ import CataloguePage from './Pages/Catalogue/Catalogue.jsx'
 import ContactsPage from './Pages/Contacts/Contacts.jsx'
 import CooperationPage from './Pages/Cooperation/Cooperation.jsx'
 import DeliveryPage from './Pages/Delivery/Delivery.jsx'
+import LoginFormPage from './Pages/LoginForm/LoginForm.jsx'
 import LogInOrRegistrationPage from './Pages/LogInOrRegistration/LogInOrRegistration.jsx'
 import NeedGoodPage from './Pages/NeedGood/NeedGoods.jsx'
 import NewPage from './Pages/New/New.jsx'
 import OrderingPage from './Pages/Ordering/Ordering.jsx'
 import OutfitPage from './Pages/Outfit/Outfit.jsx'
 import PrivacyPolicyPage from './Pages/PrivacyPolicy/PrivacyPolicy.jsx'
+import RegistrationPage from './Pages/Registration/Registration.jsx'
 import TableOfSizesPage from './Pages/TableOfSizes/TableOfSizes.jsx'
 import TermsOfSaleOfGoodsPage from './Pages/TermsOfSaleOfGoods/TermsOfSalesGoods.jsx'
 import VacanciesPage from './Pages/Vacancies/Vacancies.jsx'
@@ -34,11 +36,14 @@ function App(){
                        <Route index element ={<HomePage />}/>
                        <Route path='/privacyPolicy' element ={<PrivacyPolicyPage />}/>
                        <Route path='/delivery' element ={<DeliveryPage />}/>
+                    
                        <Route path='/tableOfSizes' element ={<TableOfSizesPage />}/>
+                       <Route path='/registration' element ={<RegistrationPage />}/>
                        <Route path='/termsOfSaleOfGoods' element ={<TermsOfSaleOfGoodsPage />}/>
                        <Route path='/contacts' element ={<ContactsPage />}/>
                        <Route path='/vacancies' element ={<VacanciesPage />}/>
                        <Route path='/cooperation' element ={<CooperationPage />}/> 
+                       <Route path='/loginForm' element ={<LoginFormPage />}/> 
                        <Route path='/logInOrRegistration' element ={<LogInOrRegistrationPage />}/>          
                        <Route path='/account/:name' element ={<AccountPage />}/>                    
                        <Route path='/viewImages/' element ={<ViewOutfitsPage />}/>                   
