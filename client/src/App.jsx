@@ -9,17 +9,18 @@ import CataloguePage from './Pages/Catalogue/Catalogue.jsx'
 import ContactsPage from './Pages/Contacts/Contacts.jsx'
 import CooperationPage from './Pages/Cooperation/Cooperation.jsx'
 import DeliveryPage from './Pages/Delivery/Delivery.jsx'
+import LoginFormPage from './Pages/LoginForm/LoginForm.jsx'
 import LogInOrRegistrationPage from './Pages/LogInOrRegistration/LogInOrRegistration.jsx'
 import NeedGoodPage from './Pages/NeedGood/NeedGoods.jsx'
 import NewPage from './Pages/New/New.jsx'
 import OrderingPage from './Pages/Ordering/Ordering.jsx'
 import OutfitPage from './Pages/Outfit/Outfit.jsx'
 import PrivacyPolicyPage from './Pages/PrivacyPolicy/PrivacyPolicy.jsx'
+import RegistrationPage from './Pages/Registration/Registration.jsx'
 import TableOfSizesPage from './Pages/TableOfSizes/TableOfSizes.jsx'
 import TermsOfSaleOfGoodsPage from './Pages/TermsOfSaleOfGoods/TermsOfSalesGoods.jsx'
 import VacanciesPage from './Pages/Vacancies/Vacancies.jsx'
 import ViewOutfitsPage from './Pages/ViewOutfits/ViewOutfits.jsx'
-
 import Header from "./Components/Header/Header.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 
@@ -39,11 +40,13 @@ function App(){
                        <Route path='/contacts' element ={<ContactsPage />}/>
                        <Route path='/vacancies' element ={<VacanciesPage />}/>
                        <Route path='/cooperation' element ={<CooperationPage />}/> 
+                       <Route path='/loginForm' element ={<LoginFormPage />}/> 
                        <Route path='/logInOrRegistration' element ={<LogInOrRegistrationPage />}/>          
                        <Route path='/account/:name' element ={<AccountPage />}/>                    
                        <Route path='/viewImages/' element ={<ViewOutfitsPage />}/>                   
                        <Route path='/Outfit/:nameOfOutfit' element ={<OutfitPage />}/>
                        <Route path='/ordering' element ={<OrderingPage />}/>
+                       <Route path='/registration' element ={<RegistrationPage />}/>
                        <Route path='/basket' element ={<BasketPage />}/>                                 
                        <Route path='/catalogue' element ={<CataloguePage />}/>                
                        <Route path='/catalogue/:items' element ={<CatalogPage />}/>
