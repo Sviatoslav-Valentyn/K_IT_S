@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "serverofkits@serverofkits123",
+    "password": "!GrygorBannedbyme78*?",
+    "database": "k_it_s",
+    "host": "serverofkits123.mysql.database.azure.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "serverofkits@serverofkits123",
+    "password": "!GrygorBannedbyme78*?",
+    "database": "k_it_s",
+    "host": "serverofkits123.mysql.database.azure.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "serverofkits@serverofkits123",
+    "password": "!GrygorBannedbyme78*?",
+    "database": "k_it_s",
+    "host": "serverofkits123.mysql.database.azure.com",
+    "dialect": "mysql"
+  }
+}
