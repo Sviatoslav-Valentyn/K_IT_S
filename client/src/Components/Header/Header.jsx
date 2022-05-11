@@ -14,7 +14,7 @@ function Header() {
                         <li> <div className="header_nav"><a className="header_nav_link"  href="#">Каталог</a></div></li>
                         <li> <div className="header_nav"><a className="header_nav_link"   href="#">Вбивця тижня</a></div></li>
                         <li> <div className="header_nav1"><a className="header_nav_link" href="http://localhost:3000">KillerStyle</a> </div> </li>
-                        <li> <div className="header_nav"><a className="header_nav_link"  href="#">Акаунт</a></div></li>
+                        <li> <div className="header_nav"><a className="header_nav_link"  href="/account/:name">Акаунт</a></div></li>
                         <li> <div className="header_nav"><a className="header_nav_link" href="#"> <img src={Basket} alt="Basket" /> </a></div></li>
                         <li> <div className="header_nav"><a className="header_nav_link" href="#"> <img src={Search} alt="Search" /> </a></div></li>
                         <li> <div className="header_nav"><a className="header_nav_link" href="#"> <img src={Heart} alt="Like"/></a></div></li>

@@ -1,0 +1,57 @@
+/*created obraz*/
+.createdOutfits{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.headerCreatedObraz{
+    text-decoration: underline;
+   font-size: 30px;
+   margin-left: 150px;
+   font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.numerationObraz{
+   
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+   margin-left: 5x;
+}
+/*sweater*/
+.sweaterObraz{
+  margin-left: 50px;
+}
+.trousersObraz{
+ margin-left: 20px;
+ margin-top: 50px;
+}
+.buyObraz{
+  position: absolute;
+width: 94px;
+height: 45px;
+left: 684px;
+top: 612x;
+
+  font-weight: 400;
+font-size: 24px;
+line-height: 45px;
+font-style: italic;
+color: #000000;
+
+}
+.publishObraz{
+  position: absolute;
+width: 146px;
+height: 45px;
+left: 865px;
+top: 612px;
+font-style: italic;
+
+
+font-weight: 400;
+font-size: 24px;
+line-height: 45px;
+
+color: #000000;
+
+}
