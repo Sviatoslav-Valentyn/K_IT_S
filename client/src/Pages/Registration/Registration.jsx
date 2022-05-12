@@ -29,6 +29,7 @@ export const Registration = () => (
         email: '',
         phone:'',
         password:'',
+      
 
       }}
       validationSchema={SignupSchema}

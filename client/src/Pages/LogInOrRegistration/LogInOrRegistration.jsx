@@ -16,6 +16,7 @@ export const LogInOrRegistration = () => (
 
         <button className="buttonLogReg" type="submit"><a className='navRegis' href='/loginForm'>Ввійти</a></button>
         <button className="buttonLogReg" type="submit"><a className="navRegis" href="/registration">Зареєструватися</a></button>
+
         
         </Form>
       )}
