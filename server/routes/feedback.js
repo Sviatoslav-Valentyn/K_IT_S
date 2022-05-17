@@ -1,4 +1,5 @@
-import express from 'express';
+const express = require('express');
+const {product} = require('../models');
 
 const router = express.Router();
 
@@ -18,4 +19,4 @@ router.post('/', async (req,res) => {
     await Feedback.create(Feedback);
     res.status(200).json(Feedback);
 });
-export default router;
+module.exports = router;

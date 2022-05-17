@@ -1,21 +1,17 @@
-import express from 'express';
-import cors from 'cors';
+const express = require ('express');
+const cors = require ('cors');
 
+const db = require('./models');
 
-//const db = require('./models');
-
-import db from './models/index.cjs';
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-//const userRouter = require('./routes/user.js');
-import userRouter from './routes/user.js';
-//const productRouter = require('./routes/product.js');
-import productRouter from './routes/product.js';
-//const feedbacxkRouter = require('./routes/feedback.js');
-import feedbackRouter from './routes/feedback.js';
+const userRouter = require('./routes/user.js');
+const productRouter = require('./routes/product.js');
+const feedbackRouter = require('./routes/feedback.js');
+
 
 app.use('/user', userRouter);
 app.use('/product', productRouter);

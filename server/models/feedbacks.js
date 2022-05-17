@@ -11,5 +11,7 @@ module.exports = (sequelize, DataTypes) => {
             length:[1,350]
         },
         
-    })
+    },{
+        timestamps: false
+      })
 }

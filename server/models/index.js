@@ -18,7 +18,7 @@ if (config.use_env_variable) {
 fs
   .readdirSync(__dirname)
   .filter(file => {
-    return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-4) === '.cjs');
+    return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
   })
   .forEach(file => {
     const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
@@ -36,8 +36,7 @@ db.Sequelize = Sequelize;
 
 db.user.hasOne(db.product, {
   foreignKey: {
-    name: 'ID_User',
-    allowNull: false
+    name: 'ID_User'
   },
   onDelete: 'RESTRICT',
   onUpdate: 'RESTRICT'
