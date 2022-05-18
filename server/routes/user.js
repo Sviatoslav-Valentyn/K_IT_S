@@ -8,15 +8,8 @@ router.get('/', async (req,res) => {
     res.status(200).json(UserList);
 });
 
-router.get(`/byId/:id`, async (req,res) => {   //login
+router.get(`/byId/:id`, async (req,res) => {
     const id = req.params.id;
-    // const loginName = req.params.Name;
-    // const loginEmail = req.params.Email;
-    // const loginPhoneNumber = req.params.PhoneNumber;
-    // if (!loginName || !loginEmail || !loginPhoneNumber)
-    // {
-    //     res.json({message: 'Login Error'})
-    // }
     if (!id)
     {
         res.status(404).json({message: 'ID відсутнє'})
@@ -45,14 +38,19 @@ router.post('/login', async (req,res) => {
     const SearchUser = await users.findOne({ where: { Email: Email} })
     if(!SearchUser)
     {
-        res.status(404).json({message: 'Нету такого'})
+        res.status(404).json({message: 'such user does not exist'})
     }
-    const SearchPassword = await users.findOne({ where: { Password: Password} })
-    if(!SearchPassword)
+    else
     {
-        res.status(404).json({message: 'Пароль невірний'})
+        const SearchPassword = await users.findOne({ where: { Password: Password, Email:Email} })
+    if(!SearchPassword)
+      {
+       res.status(404).json({message: 'password is incorrect'})
+      }
+      else{
+        res.status(200).json(SearchUser);
+      }
     }
-    res.status(404).json(SearchUser);
 });
 
 router.put(`/byId/:id`, async (req,res) => {
