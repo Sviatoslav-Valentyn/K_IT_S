@@ -8,7 +8,11 @@ module.exports = (sequelize, DataTypes) => {
         Photo: {
             type: DataTypes.BLOB('long')
         },
-        Name: {
+        Category: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        Title: {
             type: DataTypes.STRING(100),
             allowNull: false
         },
@@ -16,24 +20,20 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER(10),
             allowNull: false
         },
-        Sex: {
-            type: DataTypes.STRING(10),
-            allowNull: false
-        },
-        Country: {
-            type: DataTypes.STRING(80),
-            allowNull: false
-        },
-        Components: {
-            type: DataTypes.STRING(300),
-            allowNull: false
-        },
         Colour: {
             type: DataTypes.STRING(50),
             allowNull: false
         },
-        Season: {
+        Size: {
             type: DataTypes.STRING(50),
+            allowNull: false
+        },
+        Descryption: {
+            type: DataTypes.STRING(300),
+            allowNull: false
+        },
+        Composition: {
+            type: DataTypes.STRING(200),
             allowNull: false
         },
 

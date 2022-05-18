@@ -34,14 +34,14 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-db.user.hasOne(db.product, {
+db.users.hasOne(db.product, {
   foreignKey: {
     name: 'ID_User'
   },
   onDelete: 'RESTRICT',
   onUpdate: 'RESTRICT'
 });
-db.user.hasOne(db.feedback, {
+db.users.hasOne(db.feedback, {
   foreignKey: {
     name: 'ID_User',
     allowNull: false
