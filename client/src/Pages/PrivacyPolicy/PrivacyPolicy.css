@@ -1,0 +1,30 @@
+.wrapPrivacyPolicy{
+    position:relative;
+    width: 1300px;
+    height: 3950px;
+    background: white;
+    margin: 0 auto;
+}
+.titleOfPagePrivacyPolicy{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 81px;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.photoRighPrivacyPolicy{
+    position: absolute;
+    width: 248px;
+    height: 348px;
+    right: 0px;
+    bottom: 4px;
+}
+
+.minbold{
+    font-weight: 600;
+    margin-left: 10px;
+}
