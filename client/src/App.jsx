@@ -9,7 +9,9 @@ import CataloguePage from './Pages/Catalogue/Catalogue.jsx'
 import ContactsPage from './Pages/Contacts/Contacts.jsx'
 import CooperationPage from './Pages/Cooperation/Cooperation.jsx'
 import DeliveryPage from './Pages/Delivery/Delivery.jsx'
+import LoginFormPage from './Pages/LoginForm/LoginForm.jsx'
 import LogInOrRegistrationPage from './Pages/LogInOrRegistration/LogInOrRegistration.jsx'
+import RegistrationPage from './Pages/Registration/Registration.jsx'
 import NeedGoodPage from './Pages/NeedGood/NeedGoods.jsx'
 import NewPage from './Pages/New/New.jsx'
 import OrderingPage from './Pages/Ordering/Ordering.jsx'
@@ -38,8 +40,10 @@ function App(){
                        <Route path='/termsOfSaleOfGoods' element ={<TermsOfSaleOfGoodsPage />}/>
                        <Route path='/contacts' element ={<ContactsPage />}/>
                        <Route path='/vacancies' element ={<VacanciesPage />}/>
-                       <Route path='/cooperation' element ={<CooperationPage />}/> 
-                       <Route path='/logInOrRegistration' element ={<LogInOrRegistrationPage />}/>          
+                       <Route path='/cooperation' element ={<CooperationPage />}/>
+                       <Route path='/loginForm' element ={<LoginFormPage />}/>  
+                       <Route path='/logInOrRegistration' element ={<LogInOrRegistrationPage />}/>  
+                       <Route path='/registration' element ={<RegistrationPage />}/>        
                        <Route path='/account/:name' element ={<AccountPage />}/>                    
                        <Route path='/viewImages/' element ={<ViewOutfitsPage />}/>                   
                        <Route path='/Outfit/:nameOfOutfit' element ={<OutfitPage />}/>
