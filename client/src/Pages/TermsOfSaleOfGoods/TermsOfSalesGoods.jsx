@@ -5,10 +5,10 @@ import RightPhoto from '../../Assets/imgHome/cloudRight.png'
 import FormEmail from '../../Components/FormEmail/FormEmail.jsx'
 function TermsOfSaleOfGoods(){
     return(
-        <div className="wrapTermsOfSaleOfGoods">
-        <p className="titleOfPageTermsOfSaleOfGoods">Умови продажу товарів
+        <div className="wrapTerms">
+        <p className="titleTerms">Умови продажу товарів
         <br/>Оплата </p>
-        <h1 className="mainContentOfPageTermsOfSaleOfGoods">Оформлення замовлення провадиться клієнтом шляхом додавання товару в кошик.</h1>
+        <h1 className="mainContentTerms">Оформлення замовлення провадиться клієнтом шляхом додавання товару в кошик.</h1>
  <br />
 
    <p className="bold">Замовлення вважається належним чином оформленим, якщо:  <br /></p>

@@ -1,11 +1,11 @@
-.wrapTermsOfSaleOfGoods{
+.wrapTerms{
     position:relative;
     width: 1300px;
     height: 1030px;
     background: white;
     margin: 0 auto;
 }
-.titleOfPageTermsOfSaleOfGoods{
+.titleTerms{
     font-weight: 400;
     font-size: 44px;
     line-height: 81px;
@@ -17,7 +17,7 @@
     color: #000000;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.mainContentOfPageTermsOfSaleOfGoods{
+.mainContentTerms{
  margin-left: 30px;
  font-weight: 400;
 font-size: 20px;
