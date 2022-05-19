@@ -42,13 +42,13 @@ router.post('/login', async (req,res) => {
     }
     else
     {
-        const SearchPassword = await users.findOne({ where: { Password: Password, Email:Email} })
-    if(!SearchPassword)
+    const SearchPassword = await SearchUser.Password
+    if(SearchPassword === Password)
       {
-       res.status(404).json({message: 'password is incorrect'})
+        res.status(200).json(SearchUser);
       }
       else{
-        res.status(200).json(SearchUser);
+        res.status(404).json({message: 'password is incorrect'})
       }
     }
 });
