@@ -17,7 +17,7 @@
     color: #000000;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.mainContentOfContactsPage{
+.Content{
  margin-left: 200px;
  font-weight: 400;
 font-size: 20px;
@@ -26,7 +26,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 color: #000000;
 }
 
-.ContentBanderaOfContactsPage{
+.Location{
     margin-left: 950px;
     font-weight: 400;
    font-size: 20px;
@@ -34,7 +34,7 @@ color: #000000;
    font-family: Georgia, 'Times New Roman', Times, serif;
    color: #000000;
 }
-.ContentBanderaOfContactsPage2{
+.Locationothestreet{
     margin-left: 927px;
     font-weight: 400;
    font-size: 21px;
@@ -42,7 +42,7 @@ color: #000000;
    font-family: Georgia, 'Times New Roman', Times, serif;
    color: #000000;
 }
-.ContentBanderaOfContactsPage3{
+.Сity{
     margin-left: 1030px;
     font-weight: 400;
    font-size: 20px;

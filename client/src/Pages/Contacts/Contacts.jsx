@@ -7,14 +7,14 @@ function Contacts(){
     return(
         <div className="wrapContacts">
         <p className="titleOfPageContacts ">Контакти </p>
-        <p className="mainContentOfContactsPage">Адмінісиратори</p>
-        <label className="mainContentOfContactsPage">Уляна +380 688 241 934<br /> </label>
-        <p className="mainContentOfContactsPage">Ірина +380969373022  </p>
+        <p className="Content">Адміністратори</p>
+        <label className="Content">Уляна +380 688 241 934<br /> </label>
+        <p className="Content">Ірина +380969373022  </p>
         
 
-        <label className="ContentBanderaOfContactsPage">Наш офіс знаходиться</label>
-        <label className="ContentBanderaOfContactsPage2">на вул.Ступана Бандери 12<br /> </label>
-        <label className="ContentBanderaOfContactsPage3">м.Львів  </label>
+        <label className="Location">Наш офіс знаходиться</label>
+        <label className="Locationothestreet">на вул.Ступана Бандери 12<br /> </label>
+        <label className="Сity">м.Львів  </label>
         <FormEmail />
            
       
