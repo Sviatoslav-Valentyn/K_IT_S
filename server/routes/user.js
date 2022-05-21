@@ -12,12 +12,12 @@ router.get(`/byId/:id`, async (req,res) => {
     const id = req.params.id;
     if (!id)
     {
-        res.status(404).json({message: 'ID відсутнє'})
+        res.status(404).json({message: 'No id'})
     }
     const User = await users.findByPk(id);
     if (User == null)
     {
-    res.status(464).json({message: 'ID не знайдено'})
+    res.status(464).json({message: 'user by id not found'})
     }
     res.status(200).json(User);
 });
@@ -42,7 +42,7 @@ router.post('/login', async (req,res) => {
     }
     else
     {
-    const SearchPassword = await SearchUser.Password
+    const SearchPassword = SearchUser.Password
     if(SearchPassword === Password)
       {
         res.status(200).json(SearchUser);
@@ -58,11 +58,11 @@ router.put(`/byId/:id`, async (req,res) => {
     const UserBody = req.body;
     const SearchUser = await users.findAll({ where: { ID_User: id} })
     if (!SearchUser) {
-        res.status(404).json({message: 'ID відсутнє'})
+        res.status(404).json({message: 'user not found'})
     }
     const Useritem = await users.update(UserBody, { where: { ID_User: id} });
-    if (Useritem == false) {
-        res.status(464).json({message: 'ID не знайдено'})
+    if (!Useritem) {
+        res.status(464).json({message: 'failed to update user'})
     }
     res.status(200).json(Useritem);
 });
@@ -71,12 +71,12 @@ router.delete(`/byId/:id`, async (req,res) => {
     const id = req.params.id;
     if (!id)
     {
-        res.status(404).json({message: 'ID відсутнє'})
+        res.status(404).json({message: 'could not find user'})
     }
     const User = await users.destroy({
         where: {ID_User: id}})
-     if (User == false) {
-     res.status(464).json({message: 'ID не знайдено'})
+     if (!User) {
+     res.status(464).json({message: 'failed to delete user'})
       }
     res.status(200).json(User);
     });
