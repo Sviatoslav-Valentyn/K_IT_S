@@ -15,6 +15,8 @@ import NewPage from './Pages/New/New.jsx'
 import OrderingPage from './Pages/Ordering/Ordering.jsx'
 import OutfitPage from './Pages/Outfit/Outfit.jsx'
 import PrivacyPolicyPage from './Pages/PrivacyPolicy/PrivacyPolicy.jsx'
+//import TableOfSizesPage from './Pages/TableOfSizes/TableOfSizes.jsx'//
+//import TableOfSizesPage from './Pages/TableOfSizes.jsx' 
 import TableOfSizesPage from './Pages/TableOfSizes/TableOfSizes.jsx'
 import TermsOfSaleOfGoodsPage from './Pages/TermsOfSaleOfGoods/TermsOfSalesGoods.jsx'
 import VacanciesPage from './Pages/Vacancies/Vacancies.jsx'
