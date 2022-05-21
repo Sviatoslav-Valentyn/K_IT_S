@@ -11,7 +11,7 @@ function Footer(){
                   <li> <a className="footer_nav_link"  href="#" >Політика конфiденційності</a></li>
               </ul>
               <ul className="nav_list" >
-                  <li> <a className="footer_nav_link" href="#" >Умови продажу товарів</a></li>
+                  <li> <a className="footer_nav_link" href="/termsOfSaleOfGoods" >Умови продажу товарів</a></li>
                   <li> <a className="footer_nav_link" href="/vacancies" >Вакансії</a></li>
                   <li> <a className="footer_nav_link" href="#">Контакти</a></li>
               </ul>
