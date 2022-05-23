@@ -1,15 +1,18 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define("product", {
+    const products = sequelize.define("product", {
         ID_Product: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
         Photo: {
-            type: DataTypes.BLOB('long'),
+            type: DataTypes.BLOB('long')
+        },
+        Category: {
+            type: DataTypes.STRING(100),
             allowNull: false
         },
-        Name: {
+        Title: {
             type: DataTypes.STRING(100),
             allowNull: false
         },
@@ -17,26 +20,25 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER(10),
             allowNull: false
         },
-        Sex: {
-            type: DataTypes.STRING(10),
-            allowNull: false
-        },
-        Country: {
-            type: DataTypes.STRING(80),
-            allowNull: false
-        },
-        Components: {
-            type: DataTypes.STRING(300),
-            allowNull: false
-        },
         Colour: {
             type: DataTypes.STRING(50),
             allowNull: false
         },
-        Season: {
+        Size: {
             type: DataTypes.STRING(50),
             allowNull: false
         },
+        Descryption: {
+            type: DataTypes.STRING(300),
+            allowNull: false
+        },
+        Composition: {
+            type: DataTypes.STRING(200),
+            allowNull: false
+        },
 
-    })
+    },{
+        timestamps: false
+      })
+      return products;
 }

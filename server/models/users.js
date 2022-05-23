@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define('user', {
+    const users = sequelize.define('users', {
         ID_User: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -8,7 +8,6 @@ module.exports = (sequelize, DataTypes) => {
         Name: {
             type: DataTypes.STRING(50),
             allowNull: false,
-            required: true,
             length: [1, 50]
         },
         Password: {
@@ -30,5 +29,8 @@ module.exports = (sequelize, DataTypes) => {
             unique: true,
             length: [0,9] 
         }
-    })
+    },{
+        timestamps: false
+      })
+      return users;
 }
