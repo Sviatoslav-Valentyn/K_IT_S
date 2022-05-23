@@ -8,7 +8,7 @@ function Footer(){
                   <li> <a className="footer_nav_link" href="/delivery" >Доставка</a></li>
                   <li> <a className="footer_nav_link" href="#" >Співпраця</a></li>
                   <li> <a className="footer_nav_link" href="#"  >Таблиця розмірів</a></li>
-                  <li> <a className="footer_nav_link"  href="#" >Політика конфiденційності</a></li>
+                  <li> <a className="footer_nav_link"  href="/privacyPolicy" >Політика конфiденційності</a></li>
               </ul>
               <ul className="nav_list" >
                   <li> <a className="footer_nav_link" href="/termsOfSaleOfGoods" >Умови продажу товарів</a></li>
