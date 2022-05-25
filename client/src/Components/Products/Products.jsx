@@ -152,7 +152,7 @@ return(
     <a href={`/product/${product.ID_Product}`}>
     <div >
     <div className="photoBlock" key={product.ID_Product} >
-  <img src={product.Image} className="photoProducts" alt={product.Title}/>
+  <img src={product.Photo} className="photoProducts" alt={product.Title}/>
   <div className="discriptionProducts">
     <h5 className="nameProduct">{product.Title}</h5>
     <p className="priceProduct"> {product.Price}UAH </p>
