@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true
         },
         Photo: {
-            type: DataTypes.BLOB('long')
+            type: DataTypes.TEXT('long')
         },
         Category: {
             type: DataTypes.STRING(100),

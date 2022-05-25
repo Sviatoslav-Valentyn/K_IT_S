@@ -1,0 +1,20 @@
+.feedbackClient{
+    margin-left: 400px;
+    background-color: #FF5B83;
+    font-size: 24px;
+}
+.buttonFeedback{
+    background-color: #FF5B83;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 700px;
+    font-size: 24px;
+    color: white;
+}
+.feedbacktitle{
+    margin-left: 350px;
+    text-decoration: underline;
+    font-size: 36px;
+    margin-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
