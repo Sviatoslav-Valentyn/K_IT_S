@@ -45,8 +45,8 @@ function App(){
                        <Route path='/Outfit/:nameOfOutfit' element ={<OutfitPage />}/>
                        <Route path='/ordering' element ={<OrderingPage />}/>
                        <Route path='/basket' element ={<BasketPage />}/>                                 
-                       <Route path='/catalogue' element ={<CataloguePage />}/>                
-                       <Route path='/catalogue/:items' element ={<CatalogPage />}/>
+                       //<Route path='/products' element ={<CataloguePage />}/>                
+                       //<Route path='/products/:id' element ={<CatalogPage />}/>
                        <Route path='/catalogue/:item' element ={<NeedGoodPage />}/>
                        <Route path='/newClothes' element ={<NewPage />}/>   
                    </Route>

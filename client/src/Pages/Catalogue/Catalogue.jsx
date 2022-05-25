@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
+import Products from "../../Components/Products/Products";
 function Catalogue(){
+   
     return(
-        <div>CataloguePage</div>
+        
+        <div>
+            <Products />
+        </div>
     )
 }
 export default Catalogue;
