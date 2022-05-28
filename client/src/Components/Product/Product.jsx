@@ -52,10 +52,10 @@ const Product = () => {
                         {product.Title}
                     </h1>
                     
-                    <h3 className= "productPrice">
+                    <h4 className= "productPrice">
                          {product.Price} UAH
 
-                    </h3>
+                    </h4>
                    </div>
                     <h4 className='colSizProduct'>
                         Колір - <span className='productColorSize'>{product.Colour}</span>

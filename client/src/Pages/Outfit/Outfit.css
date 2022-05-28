@@ -1,0 +1,15 @@
+.wrapOutfit{
+    position:relative;
+    width: 1300px;
+    min-height: 300px;
+    background: white;
+    margin: 0 auto;
+   
+}
+.titleOutfit{
+    font-size: 46px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}

@@ -25,13 +25,13 @@ function Home(){
                 <tr>
                     <th>
                         <div>
-                        <a href="#">
+                        <a href="/product">
                             <img src={Man} />
                         </a>
                     </div></th>
                     <th>
                         <div class="distancePhotoColum2">
-                            <a href="#">
+                            <a href="/product">
                                 <img src={Woman} />
                             </a>
                         </div>
@@ -43,14 +43,14 @@ function Home(){
                 <tr>
                     <th>
                         <div>
-                            <a href="#">
+                            <a href="https://www.vogue.com/fashion">
                                 <img src={Newss} />
                             </a>
                         </div>
                     </th>
                     <th>
                         <div class="distancePhotoColum2" >
-                            <a href="#">
+                            <a href="/product">
                                 <img src={Neww} />
                             </a>
                         </div>

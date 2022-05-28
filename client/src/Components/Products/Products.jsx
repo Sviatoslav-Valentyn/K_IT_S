@@ -4,9 +4,9 @@ import './Products.css'
 import LoadingPhoto from '../../Assets/Loading.gif'
 
 const Products = () => {
-
+  
   const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
+  const [filterGoods, setfilterGoods] = useState(data);
   const [loading, setLoading] = useState(false);
   let componentMounted = true;
 
@@ -16,9 +16,9 @@ const Products = () => {
       const response = await fetch (`http://localhost:3001/product/`);
       if (componentMounted){
         setData(await response.clone().json());
-        setFilter(await response.json());
+        setfilterGoods(await response.json());
         setLoading(false);
-        console.log(filter)
+        console.log(filterGoods)
       }
       return () => {
         componentMounted = false;
@@ -36,9 +36,9 @@ const Loading =() => {
   )
 }
 
-const filterProduct = (cat) => {
-  const updateList = data.filter((x) => x.category === cat);
-  setFilter(updateList);
+const filterProduct = (type) => {
+  const updateList = data.filter((x) =>  x.Type === type);
+  setfilterGoods(updateList);
 }
 
 const ShowProducts =() => {
@@ -58,21 +58,21 @@ return(
     {modal && (
       <>
         <div className="clothingButton">
-<button className="typeOfProduct" onClick={() => setModalone((value) => !value)}>Одяг</button>
+<button  className="typeOfProduct"  onClick={() => setModalone((value) => !value)}>Одяг</button>
            
             <div className='blocksCategory'>
                 {modalone && (
-                    <form>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Куртки і плаття</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Штани і джинси</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Светри, світшоти</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Футболки</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Шорти</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Сукні, спідниці</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Піджаки</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Сорочки</button>
-                         <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Блузки</button>
-                    </form>
+                    < >
+                         <button className='blockCategory'  onClick={() =>  filterProduct("women's coat")}>Куртки та пальта</button>
+                         <button className='blockCategory'  onClick={() =>  filterProduct("women's trousers")}>Штани та джинси</button>
+                         <button className='blockCategory' onClick={() =>  filterProduct( "women's sweaters")}>Светри та світшоти</button>
+                         <button className='blockCategory' onClick={() =>  filterProduct( "women's shirt")}>Футболки</button>
+                         <button className='blockCategory' onClick={() =>  filterProduct( "women's shorts")}>Шорти</button>
+                         <button className='blockCategory' onClick={() =>  filterProduct( "women's dresses")}>Сукні та спідниці</button>
+                         <button className='blockCategory' onClick={() =>  filterProduct( "women's jacket")}>Піджаки</button>
+                         <button className='blockCategory' onClick={() =>  filterProduct( "women's shirts")}>Сорочки</button>
+                         <button className='blockCategory' onClick={() =>  filterProduct( "women's blouses")}>Блузки</button>
+                    </>
                 )}
             </div>
 
@@ -80,16 +80,16 @@ return(
                 <button className="typeOfProduct" onClick={() => setModaltwo((value) => !value)}>Аксесуари</button>
                 <div className='blocksCategory'>
                   {modaltwo && (
-                    <form>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Сумки і рюкзаки</button>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Взуття</button>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Шапки</button>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Гаманці</button>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Біжутерія</button>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Купальники</button>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Окуляри</button>
-                      <button className='blockCategory' onClick={() =>  filterProduct( "women's clothing")}>Шкарпетки</button>
-                    </form>
+                    <>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's bags")}>Сумки та рюкзаки</button>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's footwear")}>Взуття</button>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's cap")}>Шапки</button>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's wallet")}>Гаманці</button>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's jewelry")}>Біжутерія</button>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's swimsuit")}>Купальники</button>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's glasses")}>Окуляри</button>
+                      <button className='blockCategory' onClick={() =>  filterProduct( "women's socks")}>Шкарпетки</button>
+                    </>
                   )}
                 </div>
                 </div>
@@ -108,33 +108,33 @@ return(
       
        <div className='blocksCategory'>
            {nodalone && (
-               <form>
-                    <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Куртки і пальта</button>
-                    <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Брюки і джинси</button>
-                    <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Светри, світшоти</button>
-                    <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Футболки</button>
-                    <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Шорти</button>
-                    <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Піджаки</button>
-                    <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Сорочки</button>
+               <>
+                    <button className='blockCategory' onClick={() =>  filterProduct( "men's coat")}>Куртки та пальта</button>
+                    <button className='blockCategory' onClick={() =>  filterProduct( "men's trousers")}>Брюки та джинси</button>
+                    <button className='blockCategory' onClick={() =>  filterProduct( "men's sweaters")}>Светри та світшоти</button>
+                    <button className='blockCategory' onClick={() =>  filterProduct( "men's shirt")}>Футболки</button>
+                    <button className='blockCategory' onClick={() =>  filterProduct( "men's shorts")}>Шорти</button>
+                    <button className='blockCategory' onClick={() =>  filterProduct( "men's jacket")}>Піджаки</button>
+                    <button className='blockCategory' onClick={() =>  filterProduct( "men's shirts")}>Сорочки</button>
                     
-               </form>
+               </>
            )}
        </div>
        <div>
        <button className="typeOfProduct" onClick={() => setNodaltwo((value) => !value)}>Аксесуари</button>
        <div className='blocksCategory'>
          {nodaltwo && (
-           <form>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Сумки і рюкзаки</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Взуття</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Шапки</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Гаманці</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Ремені</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Годинники</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Окуляри</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Шкарпетки</button>
-             <button className='blockCategory' onClick={() =>  filterProduct( "men's clothing")}>Краватки</button>
-           </form>
+           <>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's bags")}>Сумки та рюкзаки</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's footwear")}>Взуття</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's cap")}>Шапки</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's wallet")}>Гаманці</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's belt")}>Ремені</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's watch")}>Годинники</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's glasses")}>Окуляри</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's socks")}>Шкарпетки</button>
+             <button className='blockCategory' onClick={() =>  filterProduct( "men's tie")}>Краватки</button>
+           </>
          )}
        </div>
        </div>
@@ -146,10 +146,10 @@ return(
 
 
 
- {filter.map((product) => {
+ {filterGoods.map((product) => {
    return(
     <div className='allBlockWithPhoto'>
-    <a href={`/product/${product.ID_Product}`}>
+    <a className='productBlock' href={`/product/${product.ID_Product}`}>
     <div >
     <div className="photoBlock" key={product.ID_Product} >
   <img src={product.Photo} className="photoProducts" alt={product.Title}/>

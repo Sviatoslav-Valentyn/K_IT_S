@@ -1,7 +1,12 @@
 import React from "react";
+import './Outfit.css'
 function Outfit(){
     return(
-        <div>OutfitPage</div>
+        <div className="wrapOutfit">
+            <div className="titleOutfit">
+            Наразі недоступно :(
+            </div>
+        </div>
     )
 }
 export default Outfit;

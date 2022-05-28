@@ -16,8 +16,24 @@
 
 
 .textBorder{
-  width: 287px;
-  height: 72px;
+  width: 290px;
+  height: 90px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background: linear-gradient(180deg, #C4C4C4 0%, rgba(255, 254, 254, 0) 100%);
+}
+
+.allGood{
+  text-decoration: none;
+  color: #000;
+}
+.imgGood{
+  width: 290px;
+  height: 390px;
+}
+.titleGood{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+.priceGood{
+  font-size: 19px;
 }

@@ -16,11 +16,12 @@ import Slider from "react-slick";
 import React from "react";
 import {Card, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Good1 from '../../Assets/imgHome/Good1.png' 
-import Good2 from '../../Assets/imgHome/Good2.png' 
-import Good3 from '../../Assets/imgHome/Good3.png' 
-import Good4 from '../../Assets/imgHome/Good4.png'
-import Good5 from '../../Assets/imgHome/Good5.png'
+import Good25 from '../../Assets/imgHome/Good25.jpg' 
+import Good12 from '../../Assets/imgHome/Good12.jpg' 
+import Good13 from '../../Assets/imgHome/Good13.jpg' 
+import Good29 from '../../Assets/imgHome/Good29.jpg' 
+import Good30 from '../../Assets/imgHome/Good30.jpg' 
+
 import './Slider.css'
 const Sliders = ()=>{
   const settings = {
@@ -48,52 +49,64 @@ const Sliders = ()=>{
         
         <div>
               <Card style={{ width: '18rem' }}>
-              <a href="#"><Card.Img variant="top" src={Good1} /></a>
+              <a className='allGood' href={`/product/${25}`} >
+                <Card.Img className="imgGood" variant="top" src={Good25} />
                 <Card.Body className="textBorder">
-                  <Card.Title>Світшот у стилі тай-дай </Card.Title>
-                   <Card.Text> 559 UAH </Card.Text>
+                  <Card.Title className="titleGood">Сукня VERSACE JEANS COUTURE</Card.Title>
+                   <Card.Text className="priceGood"> 8855 UAH </Card.Text>
                 </Card.Body>
+                </a>
             </Card>
           </div>
 
 
           <div>
-            <Card style={{ width: '18rem' }}>
-            <a href="#"><Card.Img variant="top" src={Good2} /></a>
+          <Card style={{ width: '18rem' }}>
+              <a className='allGood' href={`/product/${12}`} >
+                <Card.Img className="imgGood" variant="top" src={Good12} />
                 <Card.Body className="textBorder">
-                   <Card.Title>Блейзер </Card.Title>
-                   <Card.Text> 659 UAH</Card.Text>
+                  <Card.Title className="titleGood">Пальто TWIN-SET</Card.Title>
+                   <Card.Text className="priceGood"> 12990 UAH </Card.Text>
                 </Card.Body>
+                </a>
             </Card>
           </div>
 
           <div>
-            <Card style={{ width: '18rem' }}>
-            <a href="#"><Card.Img variant="top" src={Good3} /></a>
+          <Card style={{ width: '18rem' }}>
+              <a className='allGood' href={`/product/${29}`} >
+                <Card.Img className="imgGood" variant="top" src={Good29} />
                 <Card.Body className="textBorder">
-                   <Card.Title>Світшот </Card.Title>
-                   <Card.Text> 659 UAH</Card.Text>
+                  <Card.Title className="titleGood">Куртка KARL LAGERFELD</Card.Title>
+                   <Card.Text className="priceGood"> 6490 UAH </Card.Text>
                 </Card.Body>
+                </a>
             </Card>
           </div>
 
           <div>
-            <Card style={{ width: '18rem' }}>
-            <a href="#"><Card.Img variant="top" src={Good4} /></a>
+          <Card style={{ width: '18rem' }}>
+              <a className='allGood' href={`/product/${13}`} >
+                <Card.Img className="imgGood" variant="top" src={Good13} />
                 <Card.Body className="textBorder">
-                   <Card.Title>Мінісукня з коміром </Card.Title>
-                   <Card.Text> 499 UAH</Card.Text>
+                  <Card.Title className="titleGood">Куртка LIU JO</Card.Title>
+                   <Card.Text className="priceGood"> 1500 UAH </Card.Text>
                 </Card.Body>
+                </a>
             </Card>
           </div>
 
+
+
           <div>
-            <Card style={{ width: '18rem' }}>
-            <a href="#"><Card.Img variant="top" src={Good5} /></a>
+          <Card style={{ width: '18rem' }}>
+              <a className='allGood' href={`/product/${30}`} >
+                <Card.Img className="imgGood" variant="top" src={Good30} />
                 <Card.Body className="textBorder">
-                   <Card.Title>Джемпер </Card.Title>
-                   <Card.Text> 699 UAH</Card.Text>
+                  <Card.Title className="titleGood">Світшот TRUSSARDI</Card.Title>
+                   <Card.Text className="priceGood"> 2225 UAH </Card.Text>
                 </Card.Body>
+                </a>
             </Card>
           </div>
 

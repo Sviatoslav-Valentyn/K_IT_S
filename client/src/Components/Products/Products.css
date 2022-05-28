@@ -18,7 +18,9 @@
 }
 .clothingButton{
     position:absolute;
-    left: 10px;
+    left: 50px;
+   
+    
 }
 .typeOfProduct{
     display: flex;
@@ -61,19 +63,21 @@
 }
 
 .discriptionProducts{
-    width: 265px;
-    height: 72px;
+    width: 270px;
+    height: 90px;
     background: linear-gradient(180deg, #C4C4C4 0%, rgba(255, 254, 254, 0) 100%);
     text-decoration:none;
 }
 .nameProduct{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 17px;
     color: black;
     text-decoration: none;
 }
 .priceProduct{
-    font-size: 23px;
+    font-size: 19px;
     color: black;
 }
-
+.productBlock{
+    text-decoration: none;
+}
