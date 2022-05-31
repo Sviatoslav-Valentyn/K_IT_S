@@ -1,0 +1,76 @@
+.titleTableOfSizes{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 81px;
+    /* identical to box height */
+    text-align: center;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.wrapTableOfSizes{
+    position:relative;
+    width: 1300px;
+    height: 1750px;
+    background: white;
+    margin: 0 auto;
+}
+
+.mainForManRight{
+    margin-left: 300px;
+    font-weight: 400;
+   font-size: 25px;
+   line-height: 30px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #000000;  
+  margin-bottom: 40px;
+}
+.mainForWoomenLeft{
+    margin-left: 230px;
+    font-weight: 400;
+   font-size: 25px;
+   line-height: 30px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #000000;
+   margin-bottom: 40px;
+}
+.photoLeftTableOfSizes{
+    position: absolute;
+    width: 270px;
+    height: 342px;
+    bottom:0px;
+    left:40px;
+}
+.photoRightTableOfSizes{
+    position: absolute;
+    width: 388px;
+    height: 480px;
+    right: 0px;
+    bottom:0px
+}
+
+.photoLeftTshirts{
+    position: absolute;
+    width: 270px;
+    height: 342px;
+    bottom:200px;
+    left:40px;
+}
+.contentSizeLeft{
+    margin-left: 130px;
+    left: 30px;
+}
+.SizesRightSock{
+    margin-left: 230px;
+}
+.SizesLeftSock{
+    margin-left: 130px;
+}
+.mainKabluchka{
+    margin-left: 170px;
+}
+.RightBoots{
+    margin-left: 130px;
+}
