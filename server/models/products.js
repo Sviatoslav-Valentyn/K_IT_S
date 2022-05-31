@@ -5,8 +5,12 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true,
             primaryKey: true
         },
+        Type:{
+            type: DataTypes.STRING(80),
+            allowNull: false
+        },
         Photo: {
-            type: DataTypes.BLOB('long')
+            type: DataTypes.TEXT('long')
         },
         Category: {
             type: DataTypes.STRING(100),

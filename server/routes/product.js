@@ -23,6 +23,21 @@ router.get(`/byId/:id`, async (req,res) => {
 
 });
 
+router.get(`/byType/:type`, async (req,res) => {
+    const type = req.params.type;
+    if (!type)
+    {
+        res.status(404).json({message: 'Enter the type please!'})
+    }
+    else{
+        const Product = await product.findAll({where:{Type: type}});
+    if (Product == null)
+    {
+        res.status(464).json({message: 'product by type not found'})
+    }
+    else{res.status(200).json(Product);}}
+});
+
 router.post('/', async (req,res) => {
     const Product = req.body;
     await product.create(Product);
