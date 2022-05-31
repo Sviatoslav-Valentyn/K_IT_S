@@ -1,4 +1,5 @@
 const express = require('express');
+const bcrypt = require('bcrypt')
 const {users} = require('../models');
 
 const router = express.Router();
@@ -23,14 +24,15 @@ router.get(`/byId/:id`, async (req,res) => {
 });
 
 router.post('/registration', async (req,res) => {
-    const User = req.body;
-    await users.create(User);
-    res.status(200).json(User);
+    const {Name,Password,Email,PhoneNumber} = req.body;
+    bcrypt.hash(Password, 10).then((hash) => {
+        users.create({Name,Password: hash,Email,PhoneNumber});
+    })
+    res.status(200).json("Success!");
 });
 
 router.post('/login', async (req,res) => {
-    const Email = req.body.Email;
-    const Password = req.body.Password;
+    const {Password,Email} = req.body;
     if (!Email || !Password) 
     {
         res.status(404).json({message: 'Login or Password --- Error'})
@@ -42,14 +44,16 @@ router.post('/login', async (req,res) => {
     }
     else
     {
-    const SearchPassword = SearchUser.Password
-    if(SearchPassword === Password)
-      {
+    bcrypt.compare(Password,SearchUser.Password).then((match) =>{
+        if(!match)
+        {
+            res.status(401).json({message: 'password is incorrect'})
+        }
+        else
+        {
         res.status(200).json(SearchUser);
-      }
-      else{
-        res.status(404).json({message: 'password is incorrect'})
-      }
+    }
+    })
     }
 });
 
