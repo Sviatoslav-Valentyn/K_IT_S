@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define("feedback", {
+    const products = sequelize.define("feedback", {
         ID_Feedback: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -14,4 +14,5 @@ module.exports = (sequelize, DataTypes) => {
     },{
         timestamps: false
       })
+      return products;
 }
