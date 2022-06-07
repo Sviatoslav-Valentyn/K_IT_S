@@ -1,6 +1,6 @@
 const express = require('express');
 const {product} = require('../models');
-//../models/products.cjs
+
 const router = express.Router();
 
 router.get('/', async (req,res) => {

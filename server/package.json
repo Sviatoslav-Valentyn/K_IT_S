@@ -7,7 +7,7 @@
     "testEnvironment":"node"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "start": "nodemon server.js"
   },
   "keywords": [],
