@@ -2,6 +2,8 @@
     width: 1300px;
     margin: 0 auto;
 }
+
+
 .buttonsAll{
     display: flex;
     justify-content: center;
@@ -16,11 +18,13 @@
    font-size: 24px;
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.clothingButton{
-    position:absolute;
-    left: 50px;
-   
-    
+.clothingButtonWomen{
+    position:relative;
+    left: -300px; 
+}
+.clothingButtonMen{
+    position:relative;
+    left: 250px;
 }
 .typeOfProduct{
     display: flex;

@@ -1,5 +1,4 @@
 .wrapDelivery{
-    position:relative;
     width: 1300px;
     height: 1400px;
     background: white;
@@ -33,24 +32,23 @@ color: #000000;
     font-weight: 600;
 }
 .photoCar{
-    position: absolute;
-
-    top:450px;
+    position: relative;
+    bottom:150px;
     left:900px;
 }
 
 /*photo composition */
 .photoLeftDelivery{
-    position: absolute;
+    position: relative;
     width: 270px;
     height: 342px;
-    top:940px;
+    bottom:340px;
     left:40px;
 }
 .photoRightDelivery{
-    position: absolute;
-    width: 388px;
-    height: 480px;
-    right: 0px;
-    top:850px
+    position: relative;
+    width: 348px;
+    height: 440px;
+    left: 710px;
+    bottom:280px
 }

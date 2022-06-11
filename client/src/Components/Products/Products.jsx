@@ -2,32 +2,36 @@ import React, {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom';
 import './Products.css'
 import LoadingPhoto from '../../Assets/Loading.gif'
+import SearchForCatalogue from '../SearchForCatalogue/SearchForCatalogue';
 
 const Products = () => {
   
   const [data, setData] = useState([]);
-  const [filterGoods, setfilterGoods] = useState(data);
+  const [filteredGoods, setfilteredGoods] = useState(data);
   const [loading, setLoading] = useState(false);
   let componentMounted = true;
 
   useEffect(() => {
-    const getProducts = async () => {
+    if(componentMounted) {
       setLoading(true);
-      const response = await fetch (`http://localhost:3001/product/`);
-      if (componentMounted){
-        setData(await response.clone().json());
-        setfilterGoods(await response.json());
-        setLoading(false);
-        console.log(filterGoods)
-      }
+
+      fetch('http://localhost:3001/product/')
+     .then(response => response.json())
+     .then(data => {
+      setData(data);
+      setfilteredGoods(data);
+     })
+     
+     setLoading(false);
+
+    }
+
       return () => {
         componentMounted = false;
       }
-    }
-    getProducts();
-    }, []
 
-  );
+
+    }, [] );
 const Loading =() => {
   return(
     <>
@@ -38,7 +42,7 @@ const Loading =() => {
 
 const filterProduct = (type) => {
   const updateList = data.filter((x) =>  x.Type === type);
-  setfilterGoods(updateList);
+  setfilteredGoods(updateList);
 }
 
 const ShowProducts =() => {
@@ -50,14 +54,14 @@ const ShowProducts =() => {
   const [nodaltwo, setNodaltwo] = useState(false);
 return(
   <>
-
+  <SearchForCatalogue/>
   <div className="buttonsAll">
     <div>
-    <button className="buttonsProducts" onClick={()=>setModal((value) => !value)}>Woman</button>
+    <button className="buttonsProducts" onClick={()=>setModal((value) => !value)}>Жінки</button>
     <>
     {modal && (
       <>
-        <div className="clothingButton">
+        <div className="clothingButtonWomen">
 <button  className="typeOfProduct"  onClick={() => setModalone((value) => !value)}>Одяг</button>
            
             <div className='blocksCategory'>
@@ -100,10 +104,10 @@ return(
     </div>
 
     <div>
-    <button className="buttonsProducts" onClick={()=>setNodal((value) => !value)}>Man</button>
+    <button className="buttonsProducts" onClick={()=>setNodal((value) => !value)}>Чоловіки</button>
     <>
     {nodal && (
-      <> <div className='clothingButton'>
+      <> <div className='clothingButtonMen'>
       <button className="typeOfProduct" onClick={() => setNodalone ((value) => !value)}>Одяг</button>
       
        <div className='blocksCategory'>
@@ -146,7 +150,7 @@ return(
 
 
 
- {filterGoods.map((product) => {
+ {filteredGoods.map((product) => {
    return(
     <div className='allBlockWithPhoto'>
     <a className='productBlock' href={`/product/${product.ID_Product}`}>
@@ -169,12 +173,12 @@ return(
 </>
 );
 };
-
+  console.log(filteredGoods)
   return ( 
-    <div className='wrapProducts' >
+    <div className='wrapProduct' >
       <div className="row justify-content-center">
              {loading ? <Loading/> : <ShowProducts />}
-           </div>
+      </div>
     </div>
            
   )

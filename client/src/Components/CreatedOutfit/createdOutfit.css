@@ -26,12 +26,12 @@
  margin-top: 50px;
 }
 .buyObraz{
-  position: absolute;
+position: relative;
 width: 94px;
 height: 45px;
 left: 684px;
 top: 612x;
-
+text-decoration: underline;
   font-weight: 400;
 font-size: 24px;
 line-height: 45px;
@@ -40,13 +40,13 @@ color: #000000;
 
 }
 .publishObraz{
-  position: absolute;
+  position:relative;
 width: 146px;
 height: 45px;
 left: 865px;
-top: 612px;
+bottom: 12px;
 font-style: italic;
-
+text-decoration: underline;
 
 font-weight: 400;
 font-size: 24px;

@@ -18,7 +18,7 @@ import RightPhoto from '../../Assets/imgHome/cloudRight.png'
 function Home(){
     return(
         <div className="wrap"> 
-          
+         
            <div className="allBlock">
 
             <table className="rowPhotos">

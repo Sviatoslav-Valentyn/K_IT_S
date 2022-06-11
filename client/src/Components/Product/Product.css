@@ -1,5 +1,4 @@
 .wrapallProduct{
-    position:relative;
     width: 1300px;
     min-height: 1200px;
     background: white;
@@ -76,16 +75,16 @@
     margin-bottom: 30px;
 }
 .photoLeftONProduct{
-    position: absolute;
+    position: relative;
     width: 270px;
     height: 342px;
-    top:580px;
+    bottom:380px;
     left:50px;
 }
 .photoRightONProduct{
-    position: absolute;
+    position: relative;
     width: 388px;
     height: 480px;
-    right: 0px;
-    top:700px;
+    left: 650px;
+    bottom:300px;
 }

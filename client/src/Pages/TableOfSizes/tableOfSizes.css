@@ -11,7 +11,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .wrapTableOfSizes{
-    position:relative;
+
     width: 1300px;
     height: 1750px;
     background: white;
@@ -37,18 +37,18 @@
    margin-bottom: 40px;
 }
 .photoLeftTableOfSizes{
-    position: absolute;
+    position: relative;
     width: 270px;
     height: 342px;
-    bottom:0px;
+    bottom:450px;
     left:40px;
 }
 .photoRightTableOfSizes{
-    position: absolute;
-    width: 388px;
-    height: 480px;
-    right: 0px;
-    bottom:0px
+    position: relative;
+    width: 348px;
+    height: 440px;
+    left: 700px;
+    bottom:430px
 }
 
 .photoLeftTshirts{

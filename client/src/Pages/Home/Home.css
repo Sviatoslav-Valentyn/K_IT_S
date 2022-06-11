@@ -78,7 +78,6 @@
 */
 /*Головна сторінка*/
 .wrap{
-    position:relative;
     width: 1300px;
     height: 1900px;
     background: white;
@@ -94,17 +93,18 @@
     margin-left: 25px;
   }
 .photoLeft{
-    position: absolute;
+    position: relative;
     width: 270px;
     height: 342px;
-    top:1400px;
+    bottom:400px;
     left:50px;
 }
 .photoRight{
-    position: absolute;
-    width: 388px;
-    height: 480px;
-    right: 0px;
+    position: relative;
+    width: 348px;
+    height: 440px;
+    bottom: 370px;
+    left: 700px;
 }
 
 
