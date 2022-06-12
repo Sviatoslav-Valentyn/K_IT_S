@@ -6,15 +6,15 @@ import FormEmail from '../../Components/FormEmail/FormEmail.jsx'
 function Contacts(){
     return(
         <div className="wrapContacts">
-        <p className="titleOfPageContacts ">Контакти </p>
-        <p className="Content">Адміністратори</p>
-        <label className="Content">Уляна +380 688 241 934<br /> </label>
-        <p className="Content">Ірина +380969373022  </p>
+        <h2 className="titleOfPageContacts ">Контакти </h2>
+        <div className="Content">Адміністратори</div>
+        <div className="Content">Уляна +380 688 241 934<br /> </div>
+        <div className="Content">Ірина +380969373022  </div>
 
 
-        <label className="Location">Наш офіс знаходиться</label>
-        <label className="Locationothestreet">на вул.Ступана Бандери 12<br /> </label>
-        <label className="Сity">м.Львів  </label>
+        <div className="Location">Наш офіс знаходиться</div>
+        <div className="Locationothestreet">на вул.Степана Бандери 12<br /> </div>
+        <div className="Сity">м.Львів  </div>
         <FormEmail />
 
 
