@@ -20,7 +20,9 @@ router.get(`/byId/:id`, async (req,res) => {
     {
     res.status(464).json({message: 'user by id not found'})
     }
-    res.status(200).json(User);
+    else{
+        res.status(200).json(User);
+    }
 });
 
 router.post('/registration', async (req,res) => {
@@ -60,15 +62,18 @@ router.post('/login', async (req,res) => {
 router.put(`/byId/:id`, async (req,res) => {
     const id = req.params.id;
     const UserBody = req.body;
-    const SearchUser = await users.findAll({ where: { ID_User: id} })
-    if (!SearchUser) {
+    const Useritem = await users.update(UserBody, { where: { ID_User: id} })
+    if(!id) {
         res.status(404).json({message: 'user not found'})
     }
-    const Useritem = await users.update(UserBody, { where: { ID_User: id} });
-    if (!Useritem) {
-        res.status(464).json({message: 'failed to update user'})
-    }
-    res.status(200).json(Useritem);
+    else{
+        if (!Useritem) {
+            res.status(464).json({message: 'failed to update user'})
+        }
+        else{
+            res.status(200).json(Useritem);
+        }
+    } 
 });
 
 router.delete(`/byId/:id`, async (req,res) => {
@@ -82,8 +87,9 @@ router.delete(`/byId/:id`, async (req,res) => {
     if (!UserWasDelete) {
     res.status(464).json({message: 'failed to delete user'})
     }
-    res.status(200).json(UserWasDelete);
-    });
-
+    else{
+        res.status(200).json(UserWasDelete);
+    }
+});
 
 module.exports = router;

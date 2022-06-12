@@ -19,8 +19,9 @@ router.get(`/byId/:id`, async (req,res) => {
     {
         res.status(464).json({message: 'product by id not found'})
     }
-    res.status(200).json(Product);
-
+    else{
+        res.status(200).json(Product);
+    }
 });
 
 router.get(`/byType/:type`, async (req,res) => {
@@ -47,15 +48,18 @@ router.post('/', async (req,res) => {
 router.put(`/byId/:id`, async (req,res) => {
     const id = req.params.id;
     const ProductBody = req.body;
-    const SearchProduct = await product.findAll({ where: { ID_Product: id} })
-    if (!SearchProduct) {
+    const ProductItem = await product.update(ProductBody, { where: { ID_Product: id} });
+    if(!id) {
         res.status(404).json({message: 'product not found'})
     }
-    const ProductItem = await product.update(ProductBody, { where: { ID_Product: id} });
-    if (!ProductItem) {
-        res.status(464).json({message: 'could not update the product'})
+    else{
+        if (!ProductItem) {
+            res.status(464).json({message: 'could not update the product'})
+        }
+        else{
+            res.status(200).json(ProductItem);
+        }
     }
-    res.status(200).json(ProductItem);
 });
 
 
@@ -70,7 +74,8 @@ router.delete(`/byId/:id`, async (req,res) => {
         if (!Product) {
             res.status(464).json({message: 'Failed to delete product'})
         }
-    res.status(200).json(Product);
+        else{
+            res.status(200).json(Product);
+        }
 });
-
 module.exports = router;
