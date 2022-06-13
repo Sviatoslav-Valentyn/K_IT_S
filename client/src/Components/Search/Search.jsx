@@ -49,7 +49,7 @@ import React, { useEffect, useState } from "react";
 import {Link, useSearchParams} from 'react-router-dom'
 import './Search.css'
 function Search () {
-    const [product, setProduct] = useState([]);
+    const [products, setProducts] = useState([]);
    // const [data, setData] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
    
@@ -57,25 +57,20 @@ function Search () {
    useEffect(() => {
         fetch ('http://localhost:3001/product/')
             .then(response => response.json())
-            .then(data => setProduct(data))
-        
-       
+            .then(data => setProducts(data))   
   }, [])
   const onSuggestHandler = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const query = form.search.value.toLowerCase();
+    const query = e.target.value.toLowerCase();
     setSearchParams({product: query})
   }
 
     return (
         <div className='showproductsForSearch'>                        
-                <form className="" autoComplete ="off" onSubmit={onSuggestHandler}>
-           <input  placeholder="Введіть назву товару" type="search" name="search" />
-             <input className="searchButton" type="submit" value="Шукати" />
+            <form className="" autoComplete ="off" >
+            <input  placeholder="Введіть назву товару" type="search" name="search" onChange={onSuggestHandler}/>
            </form>
            
-            {product.filter(
+            { productQuery && products.filter(
                 product =>  product.Title.toLowerCase().includes(productQuery)
             ).map((product) => {
    return(
