@@ -66,8 +66,8 @@ function Search () {
 
     return (
         <div className='showproductsForSearch'>                        
-            <form className="" autoComplete ="off" >
-            <input  placeholder="Введіть назву товару" type="search" name="search" onChange={onSuggestHandler}/>
+            <form  autoComplete ="off" >
+            <input className="searchFormINput" placeholder="Введіть назву товару" type="search" name="search" onChange={onSuggestHandler}/>
            </form>
            
             { productQuery && products.filter(

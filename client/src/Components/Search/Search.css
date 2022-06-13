@@ -5,7 +5,8 @@
     border-bottom:  1px solid black;
     color: black;
     background-color: white;
-    width: 190px;
+    width: 250px;
+    margin-left: 35px;
     font-size: 15px;
     }
 .nameProductForSearch:hover{
@@ -16,9 +17,15 @@
 }
 .showproductsForSearch{
     position:-webkit-sticky;
+   
 }
 .searchFormINput{
-    display: flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
+    border-radius: 20px;
+    background-color:#FF5B83;
+    width: 250px;
+    height: 45px;
+    margin-left: 35px;
+    border-bottom: black 3px;
+    font-size: 20px;
+    color: black;
 }

@@ -49,6 +49,10 @@
     border: 2px solid #FF5B83 ;
     background-color: white ;
 }
+.searchProductsComf{
+    position: relative;
+    left: 10px;
+}
 .allBlockWithPhoto{
     display: flex;
     width: 270px;

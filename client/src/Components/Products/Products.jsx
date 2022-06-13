@@ -54,7 +54,7 @@ const ShowProducts =() => {
   const [nodaltwo, setNodaltwo] = useState(false);
 return(
   <>
-  <SearchForCatalogue/>
+
   <div className="buttonsAll">
     <div>
     <button className="buttonsProducts" onClick={()=>setModal((value) => !value)}>Жінки</button>
