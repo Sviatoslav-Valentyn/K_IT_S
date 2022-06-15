@@ -33,6 +33,7 @@ router.post('/registration', async (req,res) => {
 
 router.post('/login', async (req,res) => {
     const {Password,Email} = req.body;
+    console.log(req.body)
     if (!Email || !Password) 
     {
         res.status(404).json({message: 'Login or Password --- Error'})
