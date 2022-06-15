@@ -1,0 +1,39 @@
+.wrapCooperation{
+    width: 1300px;
+    height: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+.titleOfCooperation{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 81px;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 57px;
+    margin-bottom: 57px;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mainContentCooperation{
+    margin-left: 350px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cooperationphoto{
+    margin-left: 650px;
+}
+.photoLeftCooperation{
+    position: relative;
+    width: 270px;
+    height: 342px;
+    bottom:500px;
+    left:40px;
+}
+.photoRightCooperation{
+    position: relative;
+    width: 348px;
+    height: 440px;
+    left: 700px;
+    bottom:450px
+}

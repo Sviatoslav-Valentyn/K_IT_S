@@ -7,27 +7,23 @@ module.exports = (sequelize, DataTypes) => {
         },
         Name: {
             type: DataTypes.STRING(50),
-            allowNull: false,
-            length: [1, 50]
+            allowNull: false
         },
         Password: {
-            type: DataTypes.STRING(45),
+            type: DataTypes.STRING,
             allowNull: false,
-            required: true,
-            length: [8,45]
+            required: true
         },
         Email: {
             type: DataTypes.STRING(100),
             allowNull: false,
             required: true,
-            unique: true,
-            length:[5,100] 
+            unique: true
         },
         PhoneNumber: {
             type: DataTypes.INTEGER(9),
             allowNull: false,
-            unique: true,
-            length: [0,9] 
+            unique: true
         }
     },{
         timestamps: false

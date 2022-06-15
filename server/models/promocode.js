@@ -1,18 +1,18 @@
 module.exports = (sequelize, DataTypes) => {
-    const products = sequelize.define("feedback", {
-        ID_Feedback: {
+    const promos = sequelize.define("promocode", {
+        ID_Promo: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
-        Comment: {
-            type: DataTypes.STRING(350),
+        Promocode: {
+            type: DataTypes.STRING(15),
             allowNull: false,
-            length:[1,350]
+            unique: true
         },
         
     },{
         timestamps: false
       })
-      return products;
+      return promos;
 }
