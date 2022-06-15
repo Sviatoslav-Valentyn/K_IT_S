@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 //import './App.css' //import HomePage from "./HomePage" // and many other pages....
 import HomePage from './Pages/Home/Home.jsx'
@@ -26,6 +26,8 @@ import Header from "./Components/Header/Header.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 
 function App(){
+    const [cart, setCart] = useState([]);
+    const [user, setUser] = useState([]);
     return(
         <div className="App">
             <Router >
