@@ -1,0 +1,110 @@
+.formaLogin{
+    position: relative;
+    width: 572px;
+    height: 390px;
+    margin-left: 350px;
+    margin-top: 100px;
+    background-color: rgb(0, 0, 0);
+    background: rgba(229, 55, 124, 100%);
+    border-radius: 20px;
+  }
+  .wrapLogin{
+    position:relative;
+    width: 1300px;
+    height: 455px;
+    background: white;
+    margin: auto;
+  }
+
+  .forma h1, label{
+    color:rgb(0, 0, 0);
+  }
+ 
+  .headerLogin{
+    font-style: normal;
+    font-size: 28px;
+    line-height: 30px;
+    margin-left: 230px;
+    padding-top: 20px;
+    color:#000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold ;
+  }
+  .nameLoginForma{
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding-top: 0px;
+    color:#000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold ;
+  }
+  .error{
+    color: rgb(77, 8, 137);
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .nameText{
+    font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  margin-left: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .inputlogin{
+    width: 425px;
+    height: 55px;
+    margin-left: 80px;
+    border-radius: 20px;
+  }
+  
+  .navAcount{
+    text-decoration: none;
+    color: #fff;
+  }
+
+.buttonLogin{
+    width: 140px;
+    height: 43px;
+ margin-left:395px;
+    border-radius: 20px;
+    margin-top: 25px;
+    background:#000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+  }
+  .photoLeftLogin{
+    position: absolute;
+    width: 260px;
+    height: 332px;
+    top:30px;
+    left:50px;
+}
+.photoRightLogin{
+    position: absolute;
+    width: 308px;
+    height: 410px;
+    right: 0px;
+    top:25px;
+}
+.buttonLogin{
+  text-decoration: none; 
+  color: aliceblue;      
+}
+.buttonLogin a {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.buttonLogin:hover {
+
+      color:blueviolet ;
+
+} 

@@ -6,14 +6,29 @@
     background: black;
     }
  .nav_list{
-        display: flex;
+        
         justify-content: space-around;
         color: black;      
+        margin-top: 50px;
     }
-    .footer_nav_link{
+
+.footer_nav_link{
         text-decoration: none; 
         color: aliceblue;      
     }
- 
-
+ .footer a {
+        color: #fff;
+        transition: color 0.2s ease;
+    }
     
+    .footer a:hover {
+    
+            color:blueviolet ;
+    
+    } 
+.footer_nav_link_lover{
+    margin-left: 50px;
+    margin-right: 80px;
+    justify-content: space-around;
+    text-decoration: none; 
+}

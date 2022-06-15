@@ -9,4 +9,4 @@ function Outfit(){
         </div>
     )
 }
-export default Outfit;
+export default Outfit; 
