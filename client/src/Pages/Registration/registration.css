@@ -1,0 +1,89 @@
+.formRegistration{
+    position: absolute;
+    width: 572px;
+    height: 690px;
+    right: 331px;
+    margin-top: 12px;
+    background-color: rgb(0, 0, 0);
+    background: rgba(229, 55, 124, 100%);
+    border-radius: 20px;
+  }
+
+ 
+  .wrapRegistration{
+    position:relative;
+    width: 1300px;
+    height: 800px;
+    background: white;
+    margin:  auto;
+  }
+  .headerRegistration{
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 170px;
+    padding-top: 20px;
+    color:#000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold ;
+  }
+  .nameLogin{
+    font-style: normal;
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding-top: 0px;
+    color:#000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold ;
+  }
+  .error{
+    color: rgb(117, 6, 214);
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .nameText{
+    font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  margin-left: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .input{
+    width: 425px;
+    height: 55px;
+    margin-left: 80px;
+    border-radius: 20px;
+  }
+  
+.buttonRegistration{
+    width: 240px;
+    height: 43px;
+    margin-left:311px;
+    border-radius: 20px;
+    margin-top: 25px;
+    background:#000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+  }
+  .photoLeftRegistration{
+    position: absolute;
+    width: 280px;
+    height: 352px;
+    top:40px;
+    left:50px;
+  }
+  .photoRightRegistration{
+    position: absolute;
+    width: 308px;
+    height: 410px;
+    right: 0px;
+    top:390px;
+}
+  
