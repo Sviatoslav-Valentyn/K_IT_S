@@ -9,7 +9,9 @@ import CataloguePage from './Pages/Catalogue/Catalogue.jsx'
 import ContactsPage from './Pages/Contacts/Contacts.jsx'
 import CooperationPage from './Pages/Cooperation/Cooperation.jsx'
 import DeliveryPage from './Pages/Delivery/Delivery.jsx'
+import LoginFormPage from './Pages/LoginForm/LoginForm.jsx'
 import LogInOrRegistrationPage from './Pages/LogInOrRegistration/LogInOrRegistration.jsx'
+import RegistrationPage from './Pages/Registration/Registration.jsx'
 import NeedGoodPage from './Pages/NeedGood/NeedGoods.jsx'
 import NewPage from './Pages/New/New.jsx'
 import OrderingPage from './Pages/Ordering/Ordering.jsx'
@@ -26,8 +28,7 @@ import Header from "./Components/Header/Header.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 
 function App(){
-    const [cart, setCart] = useState([]);
-    const [user, setUser] = useState([]);
+
     return(
         <div className="App">
             <Router >
@@ -43,14 +44,16 @@ function App(){
                        <Route path='/contacts' element ={<ContactsPage />}/>
                        <Route path='/vacancies' element ={<VacanciesPage />}/>
                        <Route path='/cooperation' element ={<CooperationPage />}/> 
-                       <Route path='/logInOrRegistration' element ={<LogInOrRegistrationPage />}/>          
+                       <Route path='/loginForm' element ={<LoginFormPage />}/>  
+                       <Route path='/logInOrRegistration' element ={<LogInOrRegistrationPage />}/>  
+                       <Route path='/registration' element ={<RegistrationPage />}/>        
                        <Route path='/account/:name' element ={<AccountPage />}/>                    
                        <Route path='/viewImages/' element ={<ViewOutfitsPage />}/>                   
                        <Route path='/Outfit/:nameOfOutfit' element ={<OutfitPage />}/>
                        <Route path='/ordering' element ={<OrderingPage />}/>
                        <Route path='/basket' element ={<BasketPage />}/>                                 
-                       //<Route path='/product' element ={<CataloguePage />}/>                
-                       //<Route path='/product/:id' element ={<CatalogPage />}/>
+                       <Route path='/product' element ={<CataloguePage />}/>                
+                       <Route path='/product/:id' element ={<CatalogPage />}/>
                        <Route path='/search' element ={<NeedGoodPage />}/>
                        <Route path='/newClothes' element ={<NewPage />}/>   
                    </Route>

@@ -25,12 +25,19 @@
      color: white;
      font-family:Georgia, 'Times New Roman', Times, serif;
 }
+.header a {
+    color: #fff;
+    transition: color 0.2s ease;
+     
+}
+.header a:hover {
+
+        color:blueviolet ;
+
+}
 .needSearchList{
     position: relative;
 }
 .buttonForSearch{
     background-color: black;
-}
-.needSearchList{
-    grid-row-end: auto;
 }
