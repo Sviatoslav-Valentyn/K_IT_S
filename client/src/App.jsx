@@ -49,7 +49,7 @@ function App(){
                        <Route path='/basket' element ={<BasketPage />}/>                                 
                        //<Route path='/product' element ={<CataloguePage />}/>                
                        //<Route path='/product/:id' element ={<CatalogPage />}/>
-                       <Route path='/catalogue/:item' element ={<NeedGoodPage />}/>
+                       <Route path='/search' element ={<NeedGoodPage />}/>
                        <Route path='/newClothes' element ={<NewPage />}/>   
                    </Route>
                    </Routes>

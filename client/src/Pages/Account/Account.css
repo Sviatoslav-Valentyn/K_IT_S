@@ -1,5 +1,4 @@
 .wrapAccountPage{
-    position:relative;
     width: 1300px;
     height: 1000px;
     background: white;
@@ -15,7 +14,7 @@
 color: black;
    font-style: oblique;
    font-weight: 500;
-   margin-left: 965px;
+   margin-left: 1010px;
  }
  .headerOfAccount{
      margin-top: 25px;
@@ -27,7 +26,6 @@ color: black;
  }
 
  
-
 
  /*go create*/
  .headerCreateObraz{
@@ -48,9 +46,9 @@ color: black;
 
  }
  .createObraz{
-    position: absolute;
-    top:120px;
-    left: 790px;
+    position: relative;
+    top:-420px;
+    left: 890px;
  }
  
  /*strilka*/

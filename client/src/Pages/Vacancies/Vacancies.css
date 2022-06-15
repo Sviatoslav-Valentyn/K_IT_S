@@ -1,5 +1,4 @@
 .wrapVacanciesPage{
-    position:relative;
     width: 1300px;
     height: 1000px;
     background: white;
@@ -32,16 +31,16 @@ font-size: 24px;
     margin-left: 660px;
 }
 .photoLeftVacancies{
-    position: absolute;
+    position: relative;
     width: 270px;
     height: 342px;
-    top:540px;
+    bottom:540px;
     left:40px;
 }
 .photoRightVacancies{
-    position: absolute;
-    width: 388px;
-    height: 480px;
-    right: 0px;
-    top:450px
+    position: relative;
+    width: 348px;
+    height: 440px;
+    left: 700px;
+    bottom:450px
 }

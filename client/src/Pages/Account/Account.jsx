@@ -15,7 +15,6 @@ function Account(){
             </table>
             <table>
                 <tr>
-                    <th><div>NAME</div></th>
                     <th > <a className='rightPartOfAccountRow2' href="#">Переглянути образи інших</a></th>
                 </tr>
             </table>
